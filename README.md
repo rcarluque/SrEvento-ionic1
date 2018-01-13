@@ -239,7 +239,7 @@ Ahora añadimos el siguiente código a $ionicPlatform.ready() en el archivo app.
 ```
 
 # Añadir al controlador
-````javascript
+```javascript
 	if (window.AdMob) AdMob.showInterstitial();
 ```
 
