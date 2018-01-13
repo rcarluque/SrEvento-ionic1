@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <!-- Hojas de estilos -->
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic" rel="stylesheet">
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="lib/ionic-material/dist/ionic.material.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic-material/dist/ionic.material.min.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+
+    <!-- Angular Translate -->
+    <script src="lib/angular-translate/angular-translate.js"></script>
+    <script src="lib/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+
+    <script src="js/app.js"></script>
+    <!-- Servicios -->
+    <script src="js/services/routes.js"></script>
+    <script src="js/services/loadDataService.js"></script>
+    <script src="js/services/crearRutaService.js"></script>
+    <script src="js/services/camaraService.js"></script>
+    <script src="js/services/selectService.js"></script>
+    <!-- Controladores -->
+    <script src="js/controllers/mainController.js"></script>
+    <script src="js/controllers/inicioController.js"></script>
+    <script src="js/controllers/mapController.js"></script>
+    <script src="js/controllers/camaraController.js"></script>
+    <script src="js/controllers/opcionesController.js"></script>
+    <script src="js/controllers/detallesController.js"></script>
+    <script src="js/controllers/favController.js"></script>
+    <script src="js/controllers/contactosController.js"></script>
+    <!-- Directivas -->
+    <script src="js/directives/menuDirective.js"></script>
+    <script src="js/directives/cardDirective.js"></script>
+    <!-- Maps Api -->
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyDW825aZgbUmPdXngYXzDGzW7YvGdrQu4U&sensor=true"></script>
+
+    <script src="js/initAd.js"></script>
+    <script src="js/checkLocation.js"></script>
+
+  </head>
+
+  <body ng-app="srevento">
+    <ion-nav-view></ion-nav-view>
+  </body>
+
+</html>

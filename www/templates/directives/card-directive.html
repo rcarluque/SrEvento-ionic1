@@ -1,0 +1,33 @@
+<div>
+
+    <div class="list card stable-bg">
+
+        <!-- Parte del avatar-->
+        <div class="item item-avatar">
+                <img src="img/img-avatar.jpg">
+                <h2>{{nombre}}</h2>
+                <p>{{organizador}}</p>
+        </div>
+
+        <!-- Parte del cuerpo con los likes y comments-->
+        <div class="item item-body">
+            <div class="descripcion">{{descripcion}}</div>
+            <p> <a class="subdued">{{'IN' | translate}} {{localidad}}, {{provincia}}</a> </p>
+        </div>
+
+        <!-- Parte de los botones -->
+        <div class="item tabs tabs-secondary tabs-icon-left">
+            <a href="#/app/inicio/detalles/{{id}}" class="tab-item" data-ink-color="#336699" data-ink-opacity="0.5">
+                <i class="icon ion-compose"></i> {{'BTN_DETALLES' | translate}}
+            </a>
+            <a href="" ng-click="compartirWhats('¡Mira este evento!', null, 'http://srevento.esy.es/api/v1/acontecimientos')" class="tab-item" data-ink-color="#336699" data-ink-opacity="0.5">
+                <i class="icon ion-share"></i> {{'BTN_SHARE' | translate}}
+            </a>
+            <a href="#/app/inicio/map/{{id}}" class="tab-item" data-ink-color="#336699" data-ink-opacity="0.5">
+                <i class="icon ion-location"></i> {{'BTN_MAPA' | translate}}
+            </a>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,10 @@
+<ion-view title="{{'MENU_FAV' | translate}}">
+
+  <ion-content padding="true" class="has-header">
+
+  <div ng-repeat="dat in resultado">
+  	<card-directive id={{dat.id}} nombre="{{dat.nombre}}" organizador="{{dat.organizador}}" descripcion="{{dat.descripcion}}" localidad="{{dat.localidad}}" provincia="{{dat.provincia}}"></card-directive>
+  </div>
+  
+  </ion-content>
+</ion-view>

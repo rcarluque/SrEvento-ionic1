@@ -1,0 +1,97 @@
+<ion-view title="{{'ACONT' | translate}}">
+  <ion-content padding="true" class="has-header">
+
+  <div class="list animate-fade-slide-in">
+
+    <div class="item headerAcontecimiento">
+      <div class="titleAcontecimiento">{{datos.nombre}}</div>
+      <button class="icon ion-ios-star favIcon ink-dark" ng-click="insertar(datos.id, datos.nombre, datos.organizador, datos.descripcion, datos.tipo, datos.inicio, datos.fin, datos.direccion, datos.localidad, datos.cod_postal, datos.provincia, datos.longitud, datos.latitud, datos.telefono, datos.email, datos.web, datos.facebook, datos.twitter, datos.instagram)" ng-style="color"></button>
+    </div>
+      <!-- ORGANIZADOR -->
+        <div class="item item-icon-left"> 
+          <!-- Parte Izquierda--> 
+          <i class="icon ion-person-add"></i> {{'ORG_TEXT' | translate}}
+          <!-- Parte Abajo-->
+          <span class="item-note">{{datos.organizador}}</span>
+      </div>
+      <!-- DESCRIPCIÓN -->
+        <div class="item item-icon-left"> 
+          <!-- Parte Izquierda--> 
+          <i class="icon ion-ios-paper-outline"></i> {{'DESC_TEXT' | translate}}
+      </div>
+      <div class="item-note">{{datos.descripcion}}</div>
+      <!-- INICIO -->
+        <div class="item item-icon-left"> 
+          <!-- Parte Izquierda--> 
+          <i class="icon ion-calendar"></i> {{'INI_TEXT' | translate}}
+          <!-- Parte Derecha-->
+          <span class="item-note">{{datos.inicio}}</span>
+      </div>
+      <!-- FIN -->
+        <div class="item item-icon-left"> 
+          <!-- Parte Izquierda--> 
+          <i class="icon ion-calendar"></i> {{'FIN_TEXT' | translate}}
+          <!-- Parte Derecha-->
+          <span class="item-note">{{datos.fin}}</span>
+      </div>
+      <!-- DIRECCION -->
+        <div class="item item-icon-left"> 
+          <!-- Parte Izquierda--> 
+          <i class="icon ion-location"></i> {{'DIR_TEXT' | translate}}
+          <!-- Parte Derecha-->
+          <span class="item-note">{{direccion}}</span>
+      </div>
+    <!-- LOCALIDAD -->
+        <div class="item item-icon-left"> 
+          <!-- Parte Izquierda--> 
+          <i class="icon ion-map"></i> {{'LOC_TEXT' | translate}}
+          <!-- Parte Derecha-->
+          <span class="item-note">{{datos.localidad}}</span>
+      </div>
+    <!-- PROVINCIA -->
+        <div class="item item-icon-left"> 
+          <!-- Parte Izquierda--> 
+          <i class="icon ion-map"></i> {{'PRO_TEXT' | translate}}
+          <!-- Parte Derecha-->
+          <span class="item-note">{{datos.provincia}}</span>
+      </div>
+      <!-- EMAIL -->
+        <div class="item item-icon-left"> 
+          <!-- Parte Izquierda--> 
+          <i class="icon ion-email"></i> {{'EMAIL_TEXT' | translate}}
+          <!-- Parte Derecha-->
+          <span class="item-note">{{datos.email}}</span>
+      </div>
+      <!-- WEB -->
+        <div class="item item-icon-left"> 
+          <!-- Parte Izquierda--> 
+          <i class="icon ion-at"></i> {{'WEB_TEXT' | translate}}
+          <!-- Parte Derecha-->
+          <span class="item-note">{{datos.web}}</span>
+      </div>
+      <!-- FACEBOOK -->
+        <div class="item item-icon-left"> 
+          <!-- Parte Izquierda--> 
+          <i class="icon ion-social-facebook"></i> {{'FACE_TEXT' | translate}}
+          <!-- Parte Derecha-->
+          <span class="item-note">{{datos.facebook}}</span>
+      </div>
+      <!-- TWITTER -->
+        <div class="item item-icon-left"> 
+          <!-- Parte Izquierda--> 
+          <i class="icon ion-social-twitter"></i> {{'TWI_TEXT' | translate}}
+          <!-- Parte Derecha-->
+          <span class="item-note">{{datos.twitter}}</span>
+      </div>
+      <!-- INSTAGRAM -->
+        <div class="item item-icon-left"> 
+          <!-- Parte Izquierda--> 
+          <i class="icon ion-social-instagram-outline"></i> {{'INS_TEXT' | translate}}
+          <!-- Parte Derecha-->
+          <span class="item-note">{{datos.instagram}}</span>
+      </div>
+
+  </div>
+
+  </ion-content>
+</ion-view>

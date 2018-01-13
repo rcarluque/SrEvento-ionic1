@@ -1,0 +1,34 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content menu-directive>
+
+    </ion-side-menu-content>
+  
+    <ion-side-menu side="left">
+        <ion-header-bar class="expanded">
+            <img src="img/logo.png" class="avatar motion spin fade">
+            <div class="menu-bottom">
+                {{'APP_NAME' | translate}}
+            </div>
+        </ion-header-bar>
+        <ion-content class="stable-bg has-expanded-header">
+            <ion-list>
+                <ion-item nav-clear menu-close href="#/app/inicio">
+                    {{'MENU_INICIO' | translate}}
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/foto">
+                    {{'MENU_FOTO' | translate}}
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/favoritos">
+                    {{'MENU_FAV' | translate}}
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/llamada">
+                    {{'MENU_CALL' | translate}}
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/opciones">
+                    {{'MENU_OP' | translate}}
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
+

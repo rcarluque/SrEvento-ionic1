@@ -1,0 +1,18 @@
+<ion-view title="{{'VIEW_CAM' | translate}}">
+
+  <ion-content padding="true" class="has-header">
+
+	<!-- Botón para tomar la foto de Material Design (al pulsar cambia de color) con icono a la izquierda de una cámara -->
+	<button class="button button-full button-positive boton-camara icon-left ion-camera" ng-click="tomarFoto()">
+		{{'TAKE_FOTO' | translate}}
+	</button>
+
+	<!-- Botón para tomar la foto de Material Design (al pulsar cambia de color) con icono a la izquierda de una cámara -->
+	<button class="button button-full button-positive boton-camara icon-left ion-images" ng-click="getFoto()">
+		{{'CHOSS_FOTO' | translate}}
+	</button>
+
+	<img class="imgCamara" ng-src="{{picture}}" />
+
+  </ion-content>
+</ion-view>

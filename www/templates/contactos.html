@@ -1,0 +1,28 @@
+<ion-view title="{{'VIEW_CALL' | translate}}">
+
+  <ion-content padding="true" class="has-header">
+
+    <div class="list">
+      <div class="item item-avatar" ng-repeat ="cont in contacts">
+        <!-- En las etiquetas img comprueba la longitud de la propiedad photos. 
+              Si la longitud es mayor de 0 en el avatar aparecerá la foto del contacto.
+              Si la longitud es menor se le pondrá una foto por defecto -->
+        <img src="{{cont.photos[0].value}}" ng-if="cont.photos.length > 0">
+        <img src="img/user-avatar.jpg" ng-if="!cont.photos">
+        <h2>{{cont.displayName}}</h2>
+        <!-- Comprueba la longitud de los números de teléfono. 
+            Si es mayor de 0 mostrará todos los números de telefono y un botón debajo para llamar.
+            Si es 0 nos informará de que no hay telefono-->
+        <div ng-if="cont.phoneNumbers.length > 0" ng-repeat ="phn in cont.phoneNumbers">
+          <p>{{phn.type}}: {{phn.value}}</p>
+          <a class="button button-positive botonNum" href="tel: {{phn.value}}">
+            <i class="icon ion-ios-telephone"></i>
+          </a>
+        </div>
+        </p>
+        <p ng-if="cont.phoneNumbers.length == null">{{'NO_PHONE' | translate}}</p>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
