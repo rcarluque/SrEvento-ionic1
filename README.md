@@ -5,15 +5,16 @@ Instrucciones de plugins y librerías:
 
 ################### Ionic Material - (Librería Material Desing para Ionic)
 
-#Paso 1: Intalar usando bower.
+# Paso 1: Intalar usando bower.
 	```si no está instalado
 	npm install -g bower
 
 ```shell
  cd /ruta/proyecto
  bower install ionic-material
+```
  
- #Paso 2: Añadir la fuente robotodraft y los css
+# Paso 2: Añadir la fuente robotodraft y los css
  
 ```html 
 	<link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
